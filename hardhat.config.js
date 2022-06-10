@@ -1,5 +1,5 @@
 const { task } = require("hardhat/config");
-
+require("@nomiclabs/hardhat-etherscan")
 require("@nomiclabs/hardhat-waffle");
 
 const dotenv = require("dotenv");

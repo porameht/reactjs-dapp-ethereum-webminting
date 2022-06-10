@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 `npm i @openzeppelin/contracts`
 `npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6`
 `npm i -D dotenv`
+`npm i -D @nomiclab s/hardhat-etherscan`
+`npx hardhat verify --network rinkeby <0xE38D6DF722b2AaCCDF090b20942267Bb97Df8649>`
 
 ## Available Scripts
 
