@@ -14,7 +14,7 @@ npm i -D dotenv npm i -D @nomiclab s/hardhat-etherscan
 npx hardhat verify --network rinkeby <0xE38D6DF722b2AaCCDF090b20942267Bb97Df8649>
 ```
 
-***Basic Sample Hardhat Project***
+***basic sample hardhat project***
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
