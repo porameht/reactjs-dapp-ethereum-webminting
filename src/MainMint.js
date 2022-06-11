@@ -5,7 +5,7 @@ import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
 
 const duckNFTAddress = "0xE38D6DF722b2AaCCDF090b20942267Bb97Df8649";
 
-const MainMint = ({ accounts, setAccount }) => {
+const MainMint = ({ accounts, setAccounts }) => {
   const [mintAmount, setMintAmount] = useState(1);
   const isConnected = Boolean(accounts[0]);
 
@@ -16,7 +16,7 @@ const MainMint = ({ accounts, setAccount }) => {
       const contract = new ethers.Contract(duckNFTAddress, duckNFT.abi, signer);
       try {
         const response = await contract.mint(BigNumber.from(mintAmount), {
-          value: ethers.utils.parseEther((0.02 * mintAmount).toString()),
+          value: ethers.utils.parseEther((0.03 * mintAmount).toString()),
         });
         console.log("response:", response);
       } catch (err) {
@@ -76,7 +76,7 @@ const MainMint = ({ accounts, setAccount }) => {
                 height="40px"
                 textAlign="center"
                 paddingLeft="19px"
-                margitTop="10px"
+                marginTop="10px"
                 type="number"
                 value={mintAmount}
               />

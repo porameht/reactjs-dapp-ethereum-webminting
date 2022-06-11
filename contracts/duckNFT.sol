@@ -15,7 +15,7 @@ contract duckNFT is ERC721, Ownable {
     mapping(address => uint256) public walletMints;
 
     constructor() payable ERC721('duckNFT', 'DN'){
-        mintPrice = 0.03 ether;
+        mintPrice = 0.01 ether;
         totalSupply = 0;
         maxSupply = 1000;
         maxPerWallet = 3;
