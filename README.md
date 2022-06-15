@@ -1,5 +1,7 @@
 ***deploy frontend minting to netlify***
 
+decentralize application on smart contracts ethereum blockchain
+
 `https://ducknft.netlify.app/`
 
 ***deploy smart contract to rinkeby etherscan testnet***
